@@ -1,20 +1,13 @@
-import { Products } from "./services/productslist";
-
-interface Props {
-  items: Products;
-}
-export default function Items({ items }: Props) {
-  console.log(items);
+import products from "./services/get.json";
+export default function Items() {
   return (
     <main>
-      {items.product?.map((product) => (
-        <ul id={product._id}>
-          <img src={product.img.url} alt={product.name} />
-          <h2>{product.name}</h2>
-          <p>{product.cost}</p>
-        </ul>
+      {products.Products.map((product) => (
+        <div key={product._id}>
+          <h1>{product.name}</h1>
+          <img src={product.img.url as any} alt={product.name} />
+        </div>
       ))}
-      {JSON.stringify(items)}
     </main>
   );
 }

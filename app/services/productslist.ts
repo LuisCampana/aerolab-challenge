@@ -1,5 +1,5 @@
 export interface Products {
-  product: Product[];
+  Products: Product[];
 }
 
 export interface Product {
