@@ -4,9 +4,9 @@ interface Props {
 }
 export default function Items({ products }: Props) {
   return (
-    <main>
+    <main className="grid grid-cols-4">
       {products.map((product) => (
-        <div key={product._id}>
+        <div key={product._id} className="border-2 ">
           <div>
             <img src={product.img.url as any} alt={product.name} />
           </div>
