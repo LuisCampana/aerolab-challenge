@@ -9,18 +9,24 @@ export default function Items({ products }: Props) {
         <div>
           <div key={product._id} className="border-2">
             <div className="justify-center flex">
-              <img src={product.img.url as any} alt={product.name} />
+              <img
+                src={product.img.url as any}
+                alt={product.name}
+                width="100%"
+                height="auto"
+              />
             </div>
             <div className=" border-t-2 mt-[20px]">
-              <div className="mt-[15px] ml-[10px] ">
+              <div className="mt-[15px] ml-[10px] mb-[15px] ">
                 <h2 className="text-[#222222] ">{product.name}</h2>
                 <p className="text-[#222222]">{product.category}</p>
               </div>
             </div>
           </div>
-          <div className="border-2 rounded-[12px] flex justify-center p-[25px] mt-4  gap-[12px]  text-center">
+          <div className="border-2 rounded-[12px] flex justify-center p-[8px] mt-4  gap-[12px]  text-center ">
             <button className="">
-              <span className="text-[#222222]">Comprar</span>
+              <span className="text-[#222222] ">Comprar</span>
+              <>.</>
               <span className="text-[#222222] pt-[40px]">${product.cost}</span>
             </button>
           </div>
