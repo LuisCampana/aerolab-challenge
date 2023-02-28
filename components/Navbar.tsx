@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="">
+    <nav className="text-[#222222]">
       NAVBAR
       <img src="" alt="" />
     </nav>

@@ -6,9 +6,9 @@ export default async function Home() {
   const data = dato;
   const products = { Product: data.concat(data) };
   return (
-    <main className="bg-white w-full h-screen">
+    <main className="bg-white ">
       <Navbar />
-      <h1>Hola este es el home</h1>
+      <h1 className="text-[#222222]">Hola este es el home</h1>
       <Items products={data} />
     </main>
   );
