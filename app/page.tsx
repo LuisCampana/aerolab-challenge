@@ -1,3 +1,4 @@
+import Filterproducts from "@/components/Filter";
 import Navbar from "@/components/Navbar";
 import Items from "./products";
 import { GetsProducts } from "./services/gets";
@@ -7,9 +8,15 @@ export default async function Home() {
   const products = { Product: data.concat(data) };
   return (
     <main className="bg-white ">
-      <Navbar />
-      <h1 className="text-[#222222]">ACA IRIA EL FILTER</h1>
-      <Items products={data} />
+      <div>
+        <Navbar />
+      </div>
+      <section>
+        <Filterproducts />
+      </section>
+      <section>
+        <Items products={data} />
+      </section>
     </main>
   );
 }
