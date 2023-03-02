@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className="bg-white ">
       <Navbar />
-      <h1 className="text-[#222222]">Hola este es el home</h1>
+      <h1 className="text-[#222222]">ACA IRIA EL FILTER</h1>
       <Items products={data} />
     </main>
   );
