@@ -33,12 +33,14 @@ export default function Navbar() {
             />
           </span>
         </h3>
-        <img
-          className="rounded-[20%] "
-          src="https://www.theforage.com/blog/wp-content/uploads/2022/09/tech-companies-1024x683.jpg"
-          alt="auriculares"
-          width="750px"
-        />
+        <div className="grid justify-center">
+          <img
+            className="rounded-[20%] "
+            src="https://www.theforage.com/blog/wp-content/uploads/2022/09/tech-companies-1024x683.jpg"
+            alt="auriculares"
+            width="750px"
+          />
+        </div>
       </div>
     </nav>
   );
